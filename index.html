@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hailey D'souza</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 1px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+        
+
+ #nav ul {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+        }
+
+#nav {
+            border: 0px;
+            background-color: gray;
+            position: absolute;
+            top: 100%;
+            right: 0%;
+            width: 90px;
+            z-index: 999;
+            opacity: 0.80;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        #nav li {
+            text-align: center;
+            position: relative;
+            float: none;
+            line-height: 80px;
+            height: 65px;
+        }
+
+        #nav li:hover {
+            background-color: #434242;
+        }
+</style>
+</head>
+    
+<body style=margin:0;”>
+    <div id="nav">
+        <ul>
+            <li>
+                <a style = "text-decoration: none;" href="#about"=>About Me</a>
+            </li>
+             <li>
+                <a style = "text-decoration: none;" href="#projects"=>Projects</a>
+             </li>
+             <li>
+                <a style = "text-decoration: none;" href="#experiences"=>Experiences</a>
+             </li>
+             <li>
+                <a style = "text-decoration: none; " href="#contact"=>Contact</a>
+             </li>
+        </ul>
+    </div>
+
+    <!--First section-->
+  <div style="background-image: url('winter.jpg'); 
+  background-size: cover; height:450px; padding-top:80px; text-align: center;             background-attachment: fixed;">    
+      
+      <img src="mi.jpg" style="height:150px; border: 10px solid #808080;" alt="Picture of me">
+      
+      <h1 style="font-size:100px; color:white; font-family:monospace; font-weight:lighter; margin:10px; background-color:hsla(0, 0%, 0%, 0.7); font-size: 40px; text-align: center; padding-top:30px; padding-bottom: 20px;">
+          Hailey D'souza
+      <p style="font-size:30px; color: white;">
+          <em>Software Developer</em>
+      </p>  
+     <!-- <p style="font-size: 20px;">
+          <a href="/popUp.html" style="color:#F8F8FF" target="_blank">Pop up site</a> 
+      </p>-->
+      </h1>
+  </div>
+    
+<!--Second section-->
+
+<div style="background-image:url('winter.jpg');  
+  background-size: cover; height:600px; padding-top:80px; text-align: center;     background-attachment: fixed;">
+    <img src="mee.jpg" style="height:420px; margin:100px; float:left; " alt="pic of me">
+    <p   id="about"> </p>
+    <div style="height:420px; margin:100px; background-color:thistle; padding-right: 8%;">
+        <h1 style="font-size: 40px; font-weight:lighter; padding-top: 10px; ">
+            About Me<hr>
+        </h1>
+        <p  style="line-height: 2; font-size:20px;">
+        <em> Hi there! I'm Hailey D'souza, a Computer Scientist specializing in Software  Development. When I'm not developing, I enjoy running short distances and  going to the gym. I am passionate about creating and now that this webiste's complete, I'll be moving on to developing my first app. </em>
+        <br>🤍
+        </p>
+     </div>
+</div>
+
+<!--Third section-->
+<div  id="projects"  style="background-image: url('winter.jpg'); 
+  background-size: cover; height:430px; padding-top:80px; text-align: center;     background-attachment: fixed;">
+    <br><br>
+    <a style ="color:white; font-family:monospace; font-weight:lighter; padding:10px; background-color:hsla(0, 0%, 0%, 0.5);  width: 200px; font-size: 30px; margin: auto; text-decoration: none;" href="https://github.com/HaileyDsouza" target="_blank" >
+    Projects 
+    </a>
+    <br><br><br>
+    
+    <div style="background-image: url('dev.png'); background-size: cover; float:left; width: 21%; margin:20px; height:250px;">
+    </div>
+    
+     <a style="text-decoration: none; text-align:center; font-size: 30px;" href="https://github.com/HaileyDsouza/Games" target="_blank" >
+         
+        <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style="background-image: url('games.png'); background-size: cover; float: left; width: 21%; margin:20px; height:250px;">
+
+            <p style="color:white; font-family:monospace; font-weight:lighter; padding:1.5px; background-color:hsla(0, 0%, 0%, 0.5);  font-size: 20px; "> Games </p>
+            
+            <script>
+                function bigImg(x) {
+                x.style.height = "300px";
+                x.style.width = "300px";
+}
+                function normalImg(x) {
+                x.style.height = "250px";
+                x.style.width = "21%";
+}
+                </script>
+        </div>         
+    </a>
+    
+    <a style="text-decoration: none; text-align:center; font-size: 30px;" href="https://github.com/HaileyDsouza/Apps" target="_blank" >
+
+       <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style="background-image: url('app.png'); background-size: cover; float: left; width: 21%; margin:20px; height:250px;">
+
+            <p style="color:white; font-family:monospace; font-weight:lighter; padding:1.5px; background-color:hsla(0, 0%, 0%, 0.5);  font-size: 20px;"> Apps </p>
+            <script>
+                function bigImg(x) {
+                x.style.height = "300px";
+                x.style.width = "300px";
+}
+                function normalImg(x) {
+                x.style.height = "250px";
+                x.style.width = "21%";
+}
+                </script>
+        </div>         
+    </a>
+    
+    <div style="background-image: url('dev.png'); background-size: cover; float:right; width: 21%; margin:20px; height:250px;">
+    </div>
+    
+</div>
+  
+
+    
+<!--Fourth section-->
+<div style="background-image:url('winter.jpg'); 
+  background-size: cover; height:800px; padding-top:80px; background-attachment: fixed;">
+    <div  id="experiences" style="height:600px; margin:100px; background-color:#C5B8E9; font-size: 15.5px; font-weight:700;">
+        <h1 style="text-align: center; font-size: 40px; font-weight:lighter; padding-top: 10px;">
+            Experiences
+        </h1>
+        <hr style="width:50%; margin: auto;">
+        
+        <div style="white-space: pre; float: left; padding-right: 2%;"> 
+        <img style= "float:none"; src="codeninjas.png" width="150">
+        
+        <u style="text-decoration-color: white;">Code Ninjas | Software Programming Instructor | Dec 2022 - Present</u>
+        🤍Guide students weekly through game development using JavaScript
+        🤍Taught and promoted coding to 4+ students each class
+        🤍Directed software design and development to meet students needs
+        🤍Updated old code bases to modern development standards
+
+            
+        <img style= "float: none"; src="costco.png" width="90">
+        <u style="text-decoration-color: white;">Costco Wholesale | Deli Service Clerk | May 2022 - Present</u>
+        🤍Preparing, packaging, and serving deli products for members
+        
+        <u style="text-decoration-color: white;">Costco Wholesale | Front End Cashier | June 2021 - May 2022</u>
+        🤍Exceeded cashier hourly scanning goals operating at 158%
+        🤍Promoted membership & credit card upgrading by merchandising
+                        
+            
+        <img style= "float: none"; src="tims.png" width="100">
+        <u style="text-decoration-color: white;">Tim Hortons | Crew Member | Dec 2020 - June 2022</u>
+        🤍Maintained high standards of customer service 
+        </div>
+        
+        <img style= "float: left"; src="olg.png" width="75">
+        <br><br><br><br>
+         <u style="text-decoration-color: white; ">Ontario Lottery and Gaming Corp | Digital Analyst | Aug 2022- Present</u><br>
+        🤍Streamline existing reporting processes using Python <br>
+        🤍Automated tasks, enabling co-workers to 4 extra hours of FTE per week <br>
+        🤍Worked with developers to identify and remove software bugs <br>
+        🤍Obtained statistical data for ad-hoc requests with Python and SQL scripts <br>
+        🤍Attended development team training and daily meetings
+
+        <br><br>
+        <img style= "float: left"; src="dq.png" width="49">
+        <br><br>
+        <u style="text-decoration-color: white;">Dairy Queen | Supervisor | Aug 2019 - Aug 2022</u><br>
+        🤍Knowledge of cash management principles and account balancing <br>
+        🤍Applied strong leadership skills for team efficiency<br>
+        🤍Responsible for the end-to-end employee hiring process<br>
+        🤍Scheduling work shifts and conducting inventories of food supplies
+        <br><br>
+        <img style= "float: none"; src="daycare.gif" width="45">
+        <br>
+        <u style="text-decoration-color: white;">St. Mary of Leuca Daycare | Daycare Assistant | Aug 2016 - Aug 2020</u>
+        <br>
+        🤍Ensure that company sanitary standards are being followed
+
+     </div>
+</div>
+
+<!--Fifth section-->
+<div style="background-image: url('winter.jpg'); 
+  background-size: cover; height:580px; padding-top:80px; text-align: center;     background-attachment: fixed;">
+    
+<link href="contact-form.css" rel="stylesheet">
+<br><br>
+<div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact Me 🤍</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+    </form>
+    </div>
+
+</div>
+  
+</div>
+    
+    
+<!--Footer--> 
+<div id="contact" style="background-image: url('winter.jpg'); 
+  background-size: cover; height:60px; padding-top:80px; text-align: center;     background-attachment: fixed;">
+    
+    <footer style="color:white; font-family:monospace; font-weight:lighter; height:auto; padding:10px; background-color:hsla(0, 0%, 0%, 0.5); border-style: inset; font-size: 20px;">
+        
+    <a style="text-decoration: none; color:#F8F8FF; text-align:center;" href="https://www.linkedin.com/in/haileyvdsouza/" target="_blank">
+    🤍
+    Linkedin
+    <img src="linkedin.png" style="height: 30px"; alt="LinkedIn icon">
+    </a>
+    |
+    <a style="text-decoration: none; color:#F8F8FF; text-align:center;" href="https://github.com/HaileyDsouza" target="_blank" >
+    Github
+    <img src="github.jpg" style="height: 30px"; alt="github icon">
+    </a>
+    |
+    <a style="text-decoration: none; color:#F8F8FF; text-align:center;" href="mailto:Hdveronica50@gmail.com" target="_blank" >
+    Email
+    <img src="e.jpg" style="height: 30px"; alt="email icon">
+    </a>
+    |
+    <a style="text-decoration: none; color:#F8F8FF; text-align:center;" href="Resume.pdf" target="_blank" >
+    Resume
+    <img src="res.png" style="height: 30px"; alt="resume icon">
+    </a>
+    🤍
+    </footer>
+</div> 
+<script>
+          window.onscroll = function() {
+            myFunction()
+        };
+        var about = document.getElementById("about");
+        var nav = document.getElementById("nav");
+        var sticky = about.offsetTop;
+
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                nav.style.position = "fixed";
+                nav.style.top = "0%";
+                //navbar.classList.add("sticky")
+            } else {
+                nav.style.position = "absolute";
+                nav.style.top = "118%";
+                // navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>    
+
+</html> 
